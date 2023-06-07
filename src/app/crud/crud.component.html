@@ -1,0 +1,46 @@
+<p>crud works!</p>
+
+<div class="form">
+<form class="form-group" action="">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" [(ngModel)]="name">
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="text" name="text" id="text" class="form-control" [(ngModel)]="age">
+    </div>
+    <div >
+        <label for="gender">Gender</label>
+<div class="gender">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" [(ngModel)]="gender">
+    </div>
+
+    <div class="gender">
+        <label for="male">Female</label>
+        <input type="radio" name="gender" value="female" [(ngModel)]="gender">
+    </div>
+
+    <div class="gender">
+        <label for="male">Not prefer to say</label>
+        <input type="radio" name="gender" value="not prefer to say" [(ngModel)]="gender" class="gender">
+    </div>
+ </div>
+        <div class="place">
+            <label for="place">Place</label>
+            <select name="place" [(ngModel)]="place">
+                <option value="chennai">chennai</option>
+                <option value="bengaluru">bengaluru</option>
+                <option value="paris">paris</option>
+                <option value="newyork">newyork</option>
+                <option value="singappore">singappore</option>
+    
+          </select>
+        </div>
+        <div>
+            <button (click)="insert()">ADD</button>
+            <button (click)="update()">UPDATE</button>
+        </div>
+</form>
+</div>

@@ -1,0 +1,27 @@
+<h3>table works!</h3>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Place</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let e of getdata">
+                <td>{{e.username}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.gender}}</td>
+                <td>{{e.place}}</td>
+                <td>
+                    <button (click)="edit(e.id)">Edit</button>
+                    <button (click)="delete(e.id)">Delete</button>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
